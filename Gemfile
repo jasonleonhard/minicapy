@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.0'
+ruby '2.3.0' # 2.2.3
 
 gem 'rails', '4.2.5.2'
 gem 'sqlite3'
@@ -24,12 +24,13 @@ group :test do
 	gem 'minitest'
 	gem 'capybara'
 
+  gem 'rubocop', require: false
+  gem 'pry'
+
   gem 'rspec-rails'
   gem 'nyan-cat-formatter' 
-  	# rspec -f NyanCatFormatter 
-  	# rspec -f NyanCatMusicFormatter
-
-  gem 'rubocop', require: false
+    # rspec -f NyanCatFormatter 
+    # rspec -f NyanCatMusicFormatter
 end
 
 group :development, :test do

@@ -7,7 +7,6 @@ task :specs do
 end
 # task :default => :test
 
-
 # ALTERNATIVE RAKE SYNTAX BELOW
 # # rake models
 # Rake::TestTask.new(models: "db:test:prepare") do |t|
