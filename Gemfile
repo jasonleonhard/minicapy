@@ -21,21 +21,22 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :test do
-	gem 'minitest'
+	# includes rspec like syntax
+  gem 'minitest'
 	gem 'capybara'
 
   gem 'rubocop', require: false
   gem 'pry'
-
-  gem 'rspec-rails'
-  gem 'nyan-cat-formatter' 
-    # rspec -f NyanCatFormatter 
-    # rspec -f NyanCatMusicFormatter
 end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+
+  gem 'rspec-rails'
+  gem 'nyan-cat-formatter' 
+    # rspec -f NyanCatFormatter 
+    # rspec -f NyanCatMusicFormatter
 end
 
 group :development do
