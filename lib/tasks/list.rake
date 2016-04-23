@@ -7,7 +7,7 @@ task :all do
 end
 
 desc '~List my rake tasks (~ in desc for grepping)'
-task :mine do
+task :tasks do
   result = %x[rake -T | grep -i '~']
   result.each_line do |task|
     if ENV['HIDE_DOCS']
