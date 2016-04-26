@@ -8,7 +8,9 @@ what is cover:
 
 * capybara integration tests
 
+* rspec-rails (including nyan-cat-formatter)
+
 
 == WIP
 
-* rspec-rails (including nyan-cat-formatter)
+* to be announced
